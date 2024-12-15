@@ -1,0 +1,91 @@
+@import url("https://fonts.googleapis.com/css2?family=Agdasima:wght@400;700&family=Dongle&family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&family=Lustria&family=Major+Mono+Display&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+@import "react-slideshow-image/dist/styles.css";
+
+:root {
+  /* --background: #ffffff; */
+  /* --foreground: #171717; */
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    /* --background: #0a0a0a; */
+    --foreground: #ededed;
+  }
+}
+
+body {
+  font-family: Lato, Helvetica, sans-serif !important;
+  letter-spacing: 5px !important;
+  /* color: #7ed463 !important; */
+  color: white !important;
+  background-color: #181818;
+}
+
+h1,
+h2,
+h3 {
+  font-family: Major Mono Display !important;
+  letter-spacing: 1px !important;
+  font-weight: 900 !important;
+  /* text-shadow: 3px 3px 0px #64b9ff; */
+}
+
+h4,
+h5 {
+  color: #678fb3 !important;
+
+  font-weight: 700 !important;
+  font-family: Lato !important;
+  letter-spacing: 1px !important;
+  margin-top: 1rem !important;
+}
+
+/* h2 {
+  font-family: Agdasima !important;
+} */
+h5 {
+  color: #eba958 !important;
+  text-transform: uppercase !important;
+}
+
+.slide-container {
+  width: 70%;
+  margin: auto;
+}
+
+h1 {
+  color: white !important;
+}
+
+h2 {
+  color: #7ed463 !important;
+}
+
+h3 {
+  color: #7767ba !important;
+}
+
+h6 {
+  color: #eba958 !important;
+}
+
+span:not(#hero-text),
+p {
+  font-family: Lato !important;
+  font-size: 1rem !important;
+  line-height: 1.5 !important;
+  letter-spacing: 0.00938em !important;
+  font-weight: 600 !important;
+  color: white !important;
+}
+
+ul li::before:not() {
+  content: "● ";
+}
+
+button {
+  font-family: Lato !important;
+}
