@@ -121,9 +121,9 @@ const ProjectImageList = () => {
         <DialogContent
           sx={{
             position: "relative",
-            display: "flex",
-            justifyContent: "center",
-            alignItems: "center",
+            // display: "flex",
+            // justifyContent: "center",
+            // alignItems: "center",
             padding: 0,
             backgroundColor: "#000", // Optional dark background for better contrast
           }}

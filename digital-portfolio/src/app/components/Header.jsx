@@ -60,7 +60,9 @@ export default function Header(props) {
             boxShadow: 0,
           }}
         >
-          <Toolbar sx={{ backgroundColor: "transparent", gap: 1 }}>
+          <Toolbar
+            sx={{ backgroundColor: "transparent", gap: 1, flexWrap: "wrap" }}
+          >
             <Button
               onClick={() => scrollToSection("about")}
               sx={{
