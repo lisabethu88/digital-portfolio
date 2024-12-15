@@ -5,48 +5,36 @@ import {
   ListItem,
   ListItemText,
   Box,
-  IconButton,
+  Divider,
 } from "@mui/material";
-import ArrowDownwardIcon from "@mui/icons-material/ArrowDownward";
+import KeyboardDoubleArrowRightIcon from "@mui/icons-material/KeyboardDoubleArrowRight";
 import ProjectImageList from "./ProjectImageList";
 
 const Project = ({ projectData }) => {
-  const [isScrollable, setIsScrollable] = useState(false);
-  const descriptionRef = useRef(null);
-
-  useEffect(() => {
-    // Check if content is scrollable
-    if (descriptionRef.current) {
-      setIsScrollable(
-        descriptionRef.current.scrollHeight >
-          descriptionRef.current.clientHeight
-      );
-    }
-  }, [projectData]);
-
   return (
     <Box
       sx={{
-        height: "100%",
+        height: "fit-content",
         maxHeight: { xs: "none", md: "100vh" },
-        width: "100%",
-        minHeight: "fit-content",
+        width: "80%",
+        minHeight: "100vh",
+        margin: "0 auto",
       }}
     >
       <Box
         sx={{
           display: "flex",
           flexDirection: "row",
-          justifyContent: "center",
+          justifyContent: { xs: "center", md: "space-between" },
           alignItems: "center",
           gap: 1,
           flexWrap: { xs: "wrap", md: "nowrap" },
           alignContent: "center",
-          // backgroundColor: "#3b3b3b",
           width: "fit-content",
           margin: { xs: 0, md: 2 },
           borderRadius: { xs: 0, md: 2 },
           paddingY: 2,
+          backgroundColor: "#262626",
         }}
       >
         <Box
@@ -58,28 +46,53 @@ const Project = ({ projectData }) => {
             borderRadius: 2,
           }}
           data-aos="zoom-in-right"
-          ref={descriptionRef}
         >
-          <Typography
-            gutterBottom
-            variant="h3"
-            sx={{
-              fontSize: { xs: "2rem", md: "2.5rem" },
-              color: "",
-            }}
-          >
-            {projectData.title}
-          </Typography>
+          <Box>
+            <Typography
+              gutterBottom
+              variant="h3"
+              // sx={{
+              //   fontSize: { xs: "2rem", md: "2.5rem" },
+              // }}
+            >
+              {/* <KeyboardDoubleArrowRightIcon
+                sx={{ color: "#7ed463", fontSize: "3rem" }}
+              /> */}
+              {projectData.title}
+            </Typography>
+            <Divider sx={{ borderColor: "#ff24d2", marginY: 2 }} />
+            {/* <Divider
+              sx={{ borderColor: "#7767ba", marginY: 2, maxWidth: 300 }}
+            />
+            <Divider
+              sx={{ borderColor: "#678fb3", marginY: 2, maxWidth: 200 }}
+            /> */}
+          </Box>
           {/* Objectives */}
           <Box
             sx={{
-              height: "80vh",
+              height: "50vh",
               overflowY: "scroll",
               padding: 2,
               borderRadius: 2,
+              backgroundColor: "#2d2d2d",
             }}
           >
-            <Typography variant="h5" sx={{ color: "white", marginTop: 2 }}>
+            {/* <Typography
+              gutterBottom
+              variant="h4"
+              sx={{
+                color: "white",
+                fontFamily: "Lato",
+                fontWeight: 500,
+                textTransform: "uppercase",
+              }}
+            >
+              {projectData.description.title}
+            </Typography>
+            <Divider sx={{ borderColor: "#eba958", marginY: 2 }} /> */}
+
+            <Typography variant="h5" sx={{ marginTop: 2 }}>
               Objectives:
             </Typography>
             <List>
@@ -90,7 +103,7 @@ const Project = ({ projectData }) => {
               ))}
             </List>
             {/* Challenges */}
-            <Typography variant="h5" sx={{ color: "white", marginTop: 2 }}>
+            <Typography variant="h5" sx={{ marginTop: 2 }}>
               Challenges:
             </Typography>
             <List>
@@ -104,7 +117,7 @@ const Project = ({ projectData }) => {
               ))}
             </List>
             {/* Tools Used */}
-            <Typography variant="h5" sx={{ color: "white", marginTop: 2 }}>
+            <Typography variant="h5" sx={{ marginTop: 2 }}>
               Tools Used:
             </Typography>
             <List>
@@ -120,7 +133,7 @@ const Project = ({ projectData }) => {
               )}
             </List>
             {/* Outcomes */}
-            <Typography variant="h5" sx={{ color: "white", marginTop: 2 }}>
+            <Typography variant="h5" sx={{ marginTop: 2 }}>
               Outcomes:
             </Typography>
             <List>
@@ -130,36 +143,9 @@ const Project = ({ projectData }) => {
                 </ListItem>
               ))}
             </List>
-            <Typography variant="h5" sx={{ color: "white", marginTop: 2 }}>
-              Reflection:
-            </Typography>
-            <Box sx={{ marginTop: 2, marginLeft: 2 }}>
-              {projectData.description.reflection.map((paragraph, index) => (
-                <>
-                  <Typography
-                    variant={"body1"}
-                    sx={{ color: "white", fontFamily: "Lato" }}
-                  >
-                    {paragraph}
-                  </Typography>
-                  <br />
-                </>
-              ))}
-            </Box>
           </Box>
         </Box>
-        <ProjectImageList />
-        {/* <Box
-        component="img"
-        src={projectData.img}
-        sx={{
-          width: { xs: "90%", md: "50%" },
-          height: "fit-content",
-          margin: 2,
-          borderRadius: 2,
-        }}
-        data-aos="zoom-in-left"
-      ></Box> */}
+        <ProjectImageList itemData={projectData.images} />
       </Box>
     </Box>
   );

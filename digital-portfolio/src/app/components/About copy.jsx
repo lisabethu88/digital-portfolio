@@ -49,9 +49,9 @@ const About = () => {
             About Me
             {/* <Divider sx={{ width: "100%" }} /> */}
           </Typography>
-          <Divider sx={{ borderColor: "#ff24d2", marginY: 2 }} />
-          {/* <Divider sx={{ borderColor: "#7767ba", marginY: 2, maxWidth: 300 }} />
-          <Divider sx={{ borderColor: "#678fb3", marginY: 2, maxWidth: 200 }} /> */}
+          <Divider sx={{ borderColor: "#ff24d2", marginY: 2, maxWidth: 400 }} />
+          <Divider sx={{ borderColor: "#7767ba", marginY: 2, maxWidth: 300 }} />
+          <Divider sx={{ borderColor: "#678fb3", marginY: 2, maxWidth: 200 }} />
 
           <Typography
             variant="body1"

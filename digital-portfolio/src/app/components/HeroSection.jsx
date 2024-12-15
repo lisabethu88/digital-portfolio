@@ -48,30 +48,20 @@ const HeroSection = () => {
             Digital Portfolio
           </Typography>
           <Typography
-            variant="h4"
+            variant="h2"
             fontSize={{ xs: "1rem", sm: "1.5rem", md: "2.125rem" }}
             // data-aos="fade-up"
           >
             Lisa Utsett{" "}
             <KeyboardDoubleArrowRightIcon sx={{ color: "#7ed463" }} />
-            <Typography variant="span" id="hero-text" sx={{ color: "#7767ba" }}>
+            <Typography variant="span" id="hero-text" sx={{ color: "#A79CD3" }}>
               {" "}
               Front End Developer{" "}
             </Typography>
           </Typography>
         </Box>
 
-        {/* <Box
-          component="div"
-          data-aos="fade-left"
-          sx={{
-            backgroundImage: "url(/jannis-brandt-4mHaSX8zvJI-unsplash.jpg)",
-            backgroundPosition: "center",
-            backgroundSize: "cover",
-            width: { xs: "100vw", md: "50%" },
-            height: { xs: "50%", md: "100%" },
-          }}
-        ></Box> */}
+    
       </Box>
     </Box>
   );

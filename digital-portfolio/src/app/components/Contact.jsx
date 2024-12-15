@@ -4,7 +4,7 @@ import React from "react";
 const Contact = () => {
   return (
     <Box
-      id="contact"
+      id="reflection"
       sx={{
         backgroundColor: "white",
         minHeight: "100vh",

@@ -32,9 +32,149 @@ export const krlMediaDescription = {
     "Enhanced team collaboration through effective task distribution and knowledge sharing.",
     "Identified areas for improvement, particularly in accessibility and performance optimization.",
   ],
-  reflection: [
-    "We are all with various skill sets coming into his assignment and found each other's strengths in each category to complete it. Ryan and Kim worked on the wireframes and Lisa had strong coding capabilities and worked on the coding and implementation of the wireframes.",
-    "We wanted to keep our website design simple and clear for our target audience who would be hiring us to design websites, copy, logos and other digital media. We kept colors interesting but also slightly muted and fonts in colors that are readable and clear. To keep the audience engaged we kept the photos centered on the home page so they are the first thing the viewer sees when entering. This prioritizes the design element of the website.",
-    "We worked together to analyze the flow and user experience of the website to ensure it was visually interesting and functional. Some challenges we faced while working on this assignment was creating a functional website. For example, identifying an API that aligned with our website's needs was crucial. We selected Pexels because it offered a free plan with up to 200 API calls per hour. However, this choice came with a trade-off in terms of speed. We could have improved the project by placing greater emphasis on accessibility and optimizing speed. Also due to some of us being new to coding and web development, this became a great opportunity for Kim and Ryan to learn some coding through Lisa and understand how a website is built. It will be beneficial when moving forward in the development process of our final website.",
+};
+
+export const krlMediaImages = [
+  {
+    img: "/krlmedia/krl.png",
+    title: "KRL media homepage",
+  },
+  {
+    img: "/krlmedia/Screenshot 2024-12-14 at 10.39.23 PM.png",
+    title: "Screenshot of open modal",
+  },
+  {
+    img: "/krlmedia/Screenshot 2024-12-14 at 10.39.39 PM.png",
+    title: "krl media screenshot",
+  },
+  {
+    img: "/krlmedia/Screenshot 2024-12-14 at 10.40.11 PM.png",
+    title: "krl media screenshot",
+  },
+  {
+    img: "/krlmedia/Screenshot 2024-12-14 at 10.40.21 PM.png",
+    title: "krl media screenshot",
+  },
+  {
+    img: "/krlmedia/Screenshot 2024-12-14 at 10.40.52 PM.png",
+    title: "krl media screenshot",
+    rows: 2,
+    cols: 2,
+  },
+  {
+    img: "/krlmedia/Screenshot 2024-12-14 at 10.40.57 PM.png",
+    title: "krl media screenshot",
+  },
+];
+
+export const merryFlickmasImages = [
+  {
+    img: "/merryflickmas/Screenshot 2024-12-15 at 12.19.28 PM.png",
+    title: "merry flickmas screenshot",
+  },
+  {
+    img: "/merryflickmas/Screenshot 2024-12-15 at 12.19.49 PM.png",
+    title: "merry flickmas screenshot",
+  },
+  {
+    img: "/merryflickmas/Screenshot 2024-12-15 at 12.20.05 PM.png",
+    title: "merry flickmas screenshot",
+  },
+  {
+    img: "/merryflickmas/Screenshot 2024-12-15 at 12.20.16 PM.png",
+    title: "merry flickmas screenshot",
+  },
+];
+
+export const merryFlickmasDescription = {
+  title: "AI-Integrated Single Page Application",
+  objectives: [
+    "Incorporate AI-generated content into a web design project to enhance user experience and showcase the innovative application of AI in web development.",
+  ],
+  challenges: [
+    {
+      description:
+        "Gaining knowledge of AI integration into a web application.",
+      resolution: "Utilized the OpenAI API to implement AI-driven suggestions.",
+    },
+  ],
+  toolsUsed: {
+    Frameworks: ["React", "MUI"],
+    "Version Control": ["Git", "GitHub"],
+    API: "OpenAI API",
+  },
+  outcomes: [
+    "Developed a fully responsive and interactive SPA featuring AI integration. The application enables users to answer holiday-themed questions and receive personalized movie and snack recommendations.",
   ],
 };
+
+export const justTheEffingRecipeDescription = {
+  title: "AI-Integrated Multi Page Application",
+  objectives: [
+    "Develop a responsive, interactive website that integrates artificial intelligence (AI) and adheres to WCAG 2.1 accessibility standards.",
+    "Demonstrate skills in effective communication, aesthetic design, and technical programming",
+  ],
+  challenges: [
+    {
+      description: "tba",
+      resolution: "tba",
+    },
+  ],
+  toolsUsed: {
+    Frameworks: ["React", "MUI"],
+    "Version Control": ["Git", "GitHub"],
+    API: "OpenAI API",
+  },
+  outcomes: ["tba"],
+};
+
+export const justTheEffingRecipeImages = [
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.18.09 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.19.11 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.19.17 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.19.25 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.19.31 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.19.48 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.19.54 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.20.03 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.20.11 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.20.21 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.20.29 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+  {
+    img: "/justtheeffingrecipe/Screenshot 2024-12-15 at 2.20.35 PM.png",
+    title: "just the effing recipe screenshot",
+  },
+];

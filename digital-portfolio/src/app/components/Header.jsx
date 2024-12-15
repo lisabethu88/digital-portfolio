@@ -79,31 +79,11 @@ export default function Header(props) {
               Projects
             </Button>
             <Button
-              onClick={() => scrollToSection("contact")}
+              onClick={() => scrollToSection("reflection")}
               sx={{ ...buttonStyle }}
             >
-              Contact
+              Reflection
             </Button>
-            {/* <Button
-              href={"https://krl-media.vercel.app/"}
-              sx={{ color: "white", fontWeight: 800, letterSpacing: 1 }}
-            >
-              KRL Media
-            </Button>
-            <Button
-              href={
-                "https://merryflickmas-oujuigk4j-lisa-utsetts-projects.vercel.app/"
-              }
-              sx={{ color: "white", fontWeight: 800, letterSpacing: 1 }}
-            >
-              Merry Flickmas
-            </Button>
-            <Button
-              href={"https://just-the-effing-recipe.vercel.app/"}
-              sx={{ color: "white", fontWeight: 800, letterSpacing: 1 }}
-            >
-              Just the Effing Recipe
-            </Button> */}
           </Toolbar>
         </AppBar>
       </HideOnScroll>

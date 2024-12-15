@@ -8,6 +8,7 @@ import Contact from "./components/Contact";
 import { useEffect } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
+import Reflection from "./components/Reflection";
 
 export default function Home() {
   useEffect(() => {
@@ -33,7 +34,7 @@ export default function Home() {
         <HeroSection />
         <About />
         <ProjectSection />
-        <Contact />
+        <Reflection />
       </Box>
       <footer className="row-start-3 flex gap-6 flex-wrap items-center justify-center"></footer>
     </>

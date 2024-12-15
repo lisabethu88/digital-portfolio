@@ -1,20 +1,31 @@
 import { Box, List } from "@mui/material";
 import React from "react";
 import Project from "./Project";
-import { krlMediaDescription } from "../data/data";
+import {
+  justTheEffingRecipeDescription,
+  krlMediaDescription,
+  krlMediaImages,
+  merryFlickmasDescription,
+  merryFlickmasImages,
+  justTheEffingRecipeImages,
+} from "../data/data";
 
 const data = {
   krlMedia: {
-    img: "/krl.png",
     title: "KRL Media",
     description: krlMediaDescription,
+    images: krlMediaImages,
   },
-  // merryFlickmas: {
-  //   img: "/krl.png",
-  //   title: "Merry Flickmas!",
-  //   description:
-  //     "As part of my portfolio, KRL Media highlights my work in designing and developing a fictional digital arts media agency. This project showcases my ability to create a cohesive and visually engaging site that represents a team of experienced Graphic Designers, UX Designers, and Web Developers. The site emphasizes collaboration with global clients, focusing on logo creation, branding, and digital and printed launches. This project allowed me to demonstrate my skills in building user-friendly interfaces, crafting compelling content, and presenting a professional brand identity.",
-  // },
+  merryFlickmas: {
+    title: "Merry Flickmas!",
+    description: merryFlickmasDescription,
+    images: merryFlickmasImages,
+  },
+  justTheEffingRecipe: {
+    title: "Just the Effing Recipe",
+    description: justTheEffingRecipeDescription,
+    images: justTheEffingRecipeImages,
+  },
 };
 const ProjectSection = () => {
   return (
@@ -22,7 +33,6 @@ const ProjectSection = () => {
       id="projects"
       sx={{
         backgroundColor: "#181818",
-        minHeight: "100vh",
         height: "fit-content",
         width: "100vw",
         display: "flex",
@@ -31,8 +41,8 @@ const ProjectSection = () => {
       }}
     >
       <Project projectData={data.krlMedia} />
-      <Project projectData={data.krlMedia} />
-      <Project projectData={data.krlMedia} />
+      <Project projectData={data.merryFlickmas} />
+      <Project projectData={data.justTheEffingRecipe} />
     </Box>
   );
 };
