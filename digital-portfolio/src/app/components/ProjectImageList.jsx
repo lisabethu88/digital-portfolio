@@ -80,7 +80,8 @@ const ProjectImageList = () => {
     <>
       <ImageList
         sx={{
-          width: 500,
+          maxWidth: 500,
+          width: "100%",
           minHeight: 450,
           overflowY: "visible",
           borderRadius: 2,
