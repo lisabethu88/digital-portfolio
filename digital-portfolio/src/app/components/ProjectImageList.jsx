@@ -39,8 +39,8 @@ const ProjectImageList = ({ itemData }) => {
         sx={{ maxWidth: { xs: "100%", md: "50%" } }}
         data-aos="zoom-in-left"
       >
-        {itemData.map((item) => (
-          <div className="thumb-container">
+        {itemData.map((item, index) => (
+          <div className="thumb-container" key={index}>
             <img
               src={item.img}
               alt={item.title}
