@@ -46,10 +46,11 @@ const About = () => {
               fontSize: { xs: "2.5rem", md: "3rem" },
             }}
           >
-            About Me
+            <span className="arrows">{"<"}</span>About Me{" "}
+            <span className="arrows">{"/>"}</span>
             {/* <Divider sx={{ width: "100%" }} /> */}
           </Typography>
-          <Divider sx={{ borderColor: "#ff24d2", marginY: 2 }} />
+          {/* <Divider sx={{ borderColor: "#ff24d2", marginY: 2 }} /> */}
           {/* <Divider sx={{ borderColor: "#7767ba", marginY: 2, maxWidth: 300 }} />
           <Divider sx={{ borderColor: "#678fb3", marginY: 2, maxWidth: 200 }} /> */}
 

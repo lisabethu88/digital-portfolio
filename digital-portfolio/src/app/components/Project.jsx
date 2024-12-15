@@ -58,9 +58,10 @@ const Project = ({ projectData }) => {
               {/* <KeyboardDoubleArrowRightIcon
                 sx={{ color: "#7ed463", fontSize: "3rem" }}
               /> */}
-              {projectData.title}
+              <span className="arrows">{"<"}</span>
+              {projectData.title} <span className="arrows">{"/>"}</span>
             </Typography>
-            <Divider sx={{ borderColor: "#ff24d2", marginY: 2 }} />
+            {/* <Divider sx={{ borderColor: "#ff24d2", marginY: 2 }} /> */}
             {/* <Divider
               sx={{ borderColor: "#7767ba", marginY: 2, maxWidth: 300 }}
             />

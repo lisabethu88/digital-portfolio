@@ -14,10 +14,21 @@ const Reflection = () => {
         top: -70,
       }}
     >
-      <Box sx={{ maxWidth: 800 }}>
-        <Typography variant="h3">Reflection on My Learning Journey </Typography>
-        <Divider sx={{ borderColor: "#ff24d2", marginY: 2 }} />
-        <Typography>
+      <Box
+        sx={{
+          maxWidth: 800,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+        }}
+      >
+        <Typography variant="h3" sx={{ textAlign: "center" }}>
+          <span className="arrows">{"<"}</span>Reflection on My Learning Journey
+          <span className="arrows">{"/>"}</span>
+        </Typography>
+        {/* <Divider sx={{ borderColor: "#ff24d2", marginY: 2 }} /> */}
+        <Typography sx={{ margin: 4 }}>
           This class has been pivotal in reshaping my approach to web design and
           development. One of the most valuable lessons I’ve learned is the
           importance of prioritizing accessibility and user experience from the
