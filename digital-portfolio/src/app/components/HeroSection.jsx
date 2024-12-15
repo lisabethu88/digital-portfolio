@@ -10,7 +10,7 @@ const HeroSection = () => {
         width: "100vw",
         top: 0,
         position: "relative",
-        backgroundImage: "url(/computerSetup.jpg)",
+        backgroundImage: "url(/computersetup.jpg)",
         backgroundPosition: "center",
         backgroundSize: "cover",
       }}
