@@ -48,28 +48,11 @@ const Project = ({ projectData }) => {
           data-aos="zoom-in-right"
         >
           <Box>
-            <Typography
-              gutterBottom
-              variant="h3"
-              // sx={{
-              //   fontSize: { xs: "2rem", md: "2.5rem" },
-              // }}
-            >
-              {/* <KeyboardDoubleArrowRightIcon
-                sx={{ color: "#7ed463", fontSize: "3rem" }}
-              /> */}
+            <Typography gutterBottom variant="h3">
               <span className="arrows">{"<"}</span>
               {projectData.title} <span className="arrows">{"/>"}</span>
             </Typography>
-            {/* <Divider sx={{ borderColor: "#ff24d2", marginY: 2 }} /> */}
-            {/* <Divider
-              sx={{ borderColor: "#7767ba", marginY: 2, maxWidth: 300 }}
-            />
-            <Divider
-              sx={{ borderColor: "#678fb3", marginY: 2, maxWidth: 200 }}
-            /> */}
           </Box>
-          {/* Objectives */}
           <Box
             sx={{
               height: "50vh",
@@ -79,22 +62,9 @@ const Project = ({ projectData }) => {
               backgroundColor: "#2d2d2d",
             }}
           >
-            {/* <Typography
-              gutterBottom
-              variant="h4"
-              sx={{
-                color: "white",
-                fontFamily: "Lato",
-                fontWeight: 500,
-                textTransform: "uppercase",
-              }}
-            >
-              {projectData.description.title}
-            </Typography>
-            <Divider sx={{ borderColor: "#eba958", marginY: 2 }} /> */}
-
             <Typography variant="h5" sx={{ marginTop: 2 }}>
-              Objectives:
+              <span className="arrows">{"<"}</span>Objectives
+              <span className="arrows">{"/>"}</span>
             </Typography>
             <List>
               {projectData.description.objectives.map((objective, index) => (
@@ -105,7 +75,8 @@ const Project = ({ projectData }) => {
             </List>
             {/* Challenges */}
             <Typography variant="h5" sx={{ marginTop: 2 }}>
-              Challenges:
+              <span className="arrows">{"<"}</span> Challenges
+              <span className="arrows">{"/>"}</span>
             </Typography>
             <List>
               {projectData.description.challenges.map((challenge, index) => (
@@ -119,7 +90,8 @@ const Project = ({ projectData }) => {
             </List>
             {/* Tools Used */}
             <Typography variant="h5" sx={{ marginTop: 2 }}>
-              Tools Used:
+              <span className="arrows">{"<"}</span>Tools Used
+              <span className="arrows">{"/>"}</span>
             </Typography>
             <List>
               {Object.entries(projectData.description.toolsUsed).map(
@@ -135,7 +107,8 @@ const Project = ({ projectData }) => {
             </List>
             {/* Outcomes */}
             <Typography variant="h5" sx={{ marginTop: 2 }}>
-              Outcomes:
+              <span className="arrows">{"<"}</span>Outcomes{" "}
+              <span className="arrows">{"/>"}</span>
             </Typography>
             <List>
               {projectData.description.outcomes.map((outcome, index) => (

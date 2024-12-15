@@ -52,16 +52,13 @@ const HeroSection = () => {
             fontSize={{ xs: "1rem", sm: "1.5rem", md: "2.125rem" }}
             // data-aos="fade-up"
           >
-            Lisa Utsett{" "}
-            <KeyboardDoubleArrowRightIcon sx={{ color: "#7ed463" }} />
+            Lisa Utsett <KeyboardDoubleArrowRightIcon sx={{ color: "white" }} />
             <Typography variant="span" id="hero-text" sx={{ color: "#A79CD3" }}>
               {" "}
               Front End Developer{" "}
             </Typography>
           </Typography>
         </Box>
-
-    
       </Box>
     </Box>
   );
