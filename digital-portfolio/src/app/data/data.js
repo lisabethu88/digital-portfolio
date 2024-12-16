@@ -112,20 +112,48 @@ export const justTheEffingRecipeDescription = {
   title: "AI-Integrated Multi Page Application",
   objectives: [
     "Develop a responsive, interactive website that integrates artificial intelligence (AI) and adheres to WCAG 2.1 accessibility standards.",
-    "Demonstrate skills in effective communication, aesthetic design, and technical programming",
+    "Demonstrate skills in effective communication, aesthetic design, and technical programming.",
   ],
   challenges: [
     {
-      description: "tba",
-      resolution: "tba",
+      description:
+        "Implementing AI-powered recipe generation while ensuring the interface remained intuitive and responsive across devices.",
+      resolution:
+        "Utilized the OpenAI API to provide reliable and context-aware recipe suggestions and employed React and MUI to build a responsive, accessible UI adhering to WCAG 2.1 standards.",
+    },
+    {
+      description:
+        "Balancing AI integration with real-time performance to avoid delays in generating recipes for users.",
+      resolution:
+        "Optimized API calls with caching mechanisms and ensured efficient state management using React to reduce unnecessary re-renders.",
+    },
+
+    {
+      description:
+        "Designing the application to accommodate users with visual impairments, including color blindness and low vision.",
+      resolution:
+        "Implemented a high-contrast mode and ensured sufficient color contrast across all UI elements using tools like the WebAIM Contrast Checker.",
+    },
+    {
+      description:
+        "Testing the application’s accessibility across multiple devices and browsers to identify and fix inconsistencies.",
+      resolution:
+        "Conducted thorough accessibility testing using Lighthouse, addressing issues to ensure a consistent experience for all users.",
     },
   ],
   toolsUsed: {
     Frameworks: ["React", "MUI"],
     "Version Control": ["Git", "GitHub"],
     API: "OpenAI API",
+    Utilities: ["Axios"],
+    Testing: ["Lighthouse", "Manual"],
   },
-  outcomes: ["tba"],
+  outcomes: [
+    "Delivered a fully functional multi-page application that allowed users to input ingredients and receive tailored recipes in real-time.",
+    "Achieved a high level of accessibility, meeting WCAG 2.1 standards, and ensuring usability for a wide range of users.",
+    "Successfully implemented AI integration while maintaining optimal performance.",
+    "Gained knowledge in testing and refining accessibility features, creating a universally inclusive application.",
+  ],
 };
 
 export const justTheEffingRecipeImages = [
