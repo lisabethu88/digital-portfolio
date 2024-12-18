@@ -21,7 +21,7 @@ const HeroSection = () => {
           display: "flex",
           flexDirection: "row",
           justifyContent: "flex-start",
-          alignItems: "flex-end",
+          alignItems: "center",
           height: "100%",
           width: "100%",
           flexWrap: { xs: "wrap", md: "nowrap" },
